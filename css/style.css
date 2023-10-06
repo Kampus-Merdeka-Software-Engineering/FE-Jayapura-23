@@ -1,0 +1,487 @@
+/* Reset some default styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 52px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.layar-dalam {
+  width: 100%;
+  margin: auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+/* Navigation styles */
+nav {
+  z-index: 100;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  transition: ease;
+  border-bottom: 1px solid white;
+  line-height: 50px;
+  background-color: rgb(54, 53, 53);
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  text-align: center;
+  line-height: 5.5;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .logo span {
+  display: block;
+  color: white;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 800px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+  line-height: 9;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* White navigation background styles */
+nav.putih {
+  background-color: rgb(54, 53, 53);
+}
+
+nav .logo img.hitam {
+  display: none;
+}
+
+/* Header styles */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* Pengaturan awal */
+header .intro {
+  z-index: 100;
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.intro h3 {
+  font-size: 6vw; 
+  margin-bottom: 2%; 
+  color: black;
+  font-weight: bold;
+}
+
+.intro p {
+  font-weight: bold;
+  color: black;
+  font-size: 2.5vw; 
+  margin-bottom: 2%; 
+}
+
+.intro h4 {
+  font-size: 2.5vw; 
+  color: white;
+  font-weight: bold;
+}
+
+.intro a {
+  font-weight: bold;
+  font-size: 2.5vw; 
+  color: white;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 50%;
+  z-index: -1;
+}
+
+/* Menu button styles */
+.tombol-menu {
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 15%;
+}
+
+.tombol-menu .garis {
+  height: 3px;
+  background-color: white;
+}
+
+/* Section styles */
+section {
+  padding: 2%;
+  display: block;
+  margin: 2%;
+}
+
+section h3 {
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 2%;
+}
+
+/* IDs for specific sections */
+#about,
+#data-barang,
+#cek-resi {
+  text-align: center;
+}
+
+section p.ringkasan {
+  font-size: 18px;
+  color: black;
+  line-height: 1.5em;
+}
+
+section .konten-isi p {
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+/* Style for the 'about' section */
+#about {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:space-between;
+}
+
+.layar .area {
+  width: 35%;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 3%;
+  align-items: center;
+  justify-content: center;
+}
+
+.area .gambar {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 4px;
+}
+
+.area .text article h6 {
+  padding: 0%;
+  color: black;
+  line-height: 1.5em;
+  margin-bottom: 10%;
+}
+
+/* Layanan Styles */
+section.abuabu {
+  background-color: white;
+}
+
+section.abuabu div img {
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+}
+
+.layanan{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.layanan h6 {
+  margin-top: 0;
+  font-size: 100%;
+  font-weight: bold;
+  line-height: 2.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.layanan img {
+  width: 50%;
+}
+
+.layanan div {
+  text-align: center;
+  width: 26%;
+}
+
+/* Our-Team section styles */
+#our-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  position: relative;
+  background-color: silver;
+}
+
+#our-team div {
+  flex-basis: calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+#our-team div img {
+  max-width: 70%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+#our-team div div {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+section#our-team div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+/* Form Styles */
+.form-container {
+  margin: 0% auto;
+  max-width: 80%;
+  padding:2%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1% solid #0b0b0b;
+  border-radius: 0%;
+  box-shadow: 0% 0% 0% rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 0%;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.form-group [type="text"] {
+  width: 100%;
+  padding: 0%;
+  border: 0% solid #060505;
+  border-radius: 0%;
+}
+
+button[type="submit"] {
+  background-color: rgb(54, 53, 53);
+  color: white;
+  padding: 0% 2%;
+  border: none;
+  font-size: 100%;
+  cursor: pointer;
+  background-position: center;
+  margin: 3%;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+  border-bottom: 2px solid white;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+footer .layar-dalam {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .layar-dalam div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+footer .layar-dalam h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+      top: 20%; 
+    }
+  
+    .intro h3 {
+      font-size: 8vw; 
+    }
+  
+    .intro p {
+      font-size: 4vw; 
+    }
+  
+    .intro h4,
+    .intro a {
+      font-size: 3vw; 
+    }
+
+    #about {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .layar .area {
+      width: 100%;
+      margin: 2% 0; 
+    }
+
+    .layanan {
+      display: block;
+    }
+  
+    .layanan div {
+      width: 100%;
+    }
+
+    #our-team {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  
+    #our-team div {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  
+    .layar-dalam {
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .layar-dalam div {
+      text-align: center;
+      padding: 10px 0; 
+    }
+  
+    footer .layar-dalam h5 {
+      font-size: 16px; 
+      margin-bottom: 8px; 
+    }
+  
+    .layar-dalam {
+      width: 90%;
+    }
+}
+
+@media (max-width: 990px) {
+  nav .menu ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid white;
+    background-color: rgb(54, 53, 53);
+  }
+
+  nav .menu ul li a {
+    color: #f7f5f5;
+    line-height: 1.5;
+  }
+
+  .tombol-menu {
+    display: flex;
+  }
+}
