@@ -93,7 +93,7 @@ function cekResi(event) {
 
         .then(response => response.json())
         .then((response) => {
-            if(response.data){
+            if (response.data) {
                 document.querySelector("#content-cek-resi").innerHTML = `
                 <ul>
                      <li style="list-style: none">Nama:${response.data.nama}</li>
@@ -102,10 +102,10 @@ function cekResi(event) {
                      <li style="list-style: none">Nomor HP:${response.data.nomorHP}</li>
                 </ul>
                 `;
-            }else{ 
+            } else {
                 alert("Nomor resi tidak ditemukan")
             }
-           
+
         })
         .catch(error => {
             console.error(error);
