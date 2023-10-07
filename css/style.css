@@ -121,8 +121,8 @@ header .intro {
 }
 
 .intro h3 {
-  font-size: 6vw; 
-  margin-bottom: 2%; 
+  font-size: 6vw;
+  margin-bottom: 2%;
   color: black;
   font-weight: bold;
 }
@@ -130,19 +130,19 @@ header .intro {
 .intro p {
   font-weight: bold;
   color: black;
-  font-size: 2.5vw; 
-  margin-bottom: 2%; 
+  font-size: 2.5vw;
+  margin-bottom: 2%;
 }
 
 .intro h4 {
-  font-size: 2.5vw; 
+  font-size: 2.5vw;
   color: white;
   font-weight: bold;
 }
 
 .intro a {
   font-weight: bold;
-  font-size: 2.5vw; 
+  font-size: 2.5vw;
   color: white;
 }
 
@@ -207,8 +207,8 @@ section .konten-isi p {
 /* Style for the 'about' section */
 #about {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content:space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .layar .area {
@@ -248,7 +248,7 @@ section.abuabu div img {
   height: auto;
 }
 
-.layanan{
+.layanan {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -292,7 +292,7 @@ p {
   position: relative;
   margin-bottom: 10px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
@@ -320,7 +320,7 @@ section#our-team div img:hover {
 .form-container {
   margin: 0% auto;
   max-width: 80%;
-  padding:2%;
+  padding: 2%;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1% solid #0b0b0b;
   border-radius: 0%;
@@ -357,9 +357,9 @@ button[type="submit"] {
 
 /* Style the footer */
 footer {
-  background-color: #333; 
-  color: white; 
-  padding: 20px; 
+  background-color: #333;
+  color: white;
+  padding: 20px;
   border-bottom: 2px solid white;
 }
 
@@ -395,70 +395,70 @@ footer .layar-dalam h5 {
 }
 
 @media (max-width: 768px) {
-    .intro {
-      top: 20%; 
-    }
-  
-    .intro h3 {
-      font-size: 8vw; 
-    }
-  
-    .intro p {
-      font-size: 4vw; 
-    }
-  
-    .intro h4,
-    .intro a {
-      font-size: 3vw; 
-    }
+  .intro {
+    top: 20%;
+  }
 
-    #about {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .layar .area {
-      width: 100%;
-      margin: 2% 0; 
-    }
+  .intro h3 {
+    font-size: 8vw;
+  }
 
-    .layanan {
-      display: block;
-    }
-  
-    .layanan div {
-      width: 100%;
-    }
+  .intro p {
+    font-size: 4vw;
+  }
 
-    #our-team {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-    }
-  
-    #our-team div {
-      flex-basis: 100%;
-      max-width: 100%;
-    }
-  
-    .layar-dalam {
-      flex-direction: column;
-      align-items: center; 
-    }
-  
-    .layar-dalam div {
-      text-align: center;
-      padding: 10px 0; 
-    }
-  
-    footer .layar-dalam h5 {
-      font-size: 16px; 
-      margin-bottom: 8px; 
-    }
-  
-    .layar-dalam {
-      width: 90%;
-    }
+  .intro h4,
+  .intro a {
+    font-size: 3vw;
+  }
+
+  #about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .layar .area {
+    width: 100%;
+    margin: 2% 0;
+  }
+
+  .layanan {
+    display: block;
+  }
+
+  .layanan div {
+    width: 100%;
+  }
+
+  #our-team {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #our-team div {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .layar-dalam {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .layar-dalam div {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  footer .layar-dalam h5 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .layar-dalam {
+    width: 90%;
+  }
 }
 
 @media (max-width: 990px) {
