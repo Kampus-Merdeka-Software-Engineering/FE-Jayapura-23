@@ -51,7 +51,7 @@ $(document).ready(function () {
     });
 });
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://be-jayapura-23-production.up.railway.app'
 
 function inputDataBarang(event) {
     const namaPengguna = document.querySelector("#nama-pengguna")
